@@ -1,0 +1,76 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --bg-color:#222327;
+    --text-color:#fff;
+    --main-color:#29fd53;
+}
+body{
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color:var(--text-color);
+
+}
+nav{
+    position: fixed;
+    width:100%;
+    top:0;
+    right:0;
+    z-index: 1000;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:transparent;
+    padding:28px 12%;
+    transition: all 0.50s ease;
+}
+.logo{
+    color: var(--text-color);
+    font-size: 1.1em;
+    font-weight:600;
+}
+.navbar{
+    display:flex;
+}
+.navbar a{
+    color: var(--text-color);
+    font-size:1.1rem;
+    font-weight: 500;
+    padding:5px 0;
+    margin: 0px 30px;
+    transition:all 0.5s ease;
+}
+.navbar a:hover{
+    color:var(--main-color);
+}
+.navbar a.active{
+    color:var(--main-color);
+}
+.main{
+    display:flex;
+    align-items:center;
+}
+.main a{
+    padding:5px 0;
+    margin: 0px 30px;
+    color: var(--text-color);
+    transition:all 0.5s ease;
+}
+.button{
+    position:relative;
+    text-align:center;
+    width:auto;
+    padding:10px;
+    margin:10px;
+    border:2px solid var(--main-color);
+    border-radius:200px;
+    transition:all 0.5s ease; 
+}
+.button:hover{
+    box-shadow:0 5px 50px var(--main-color) inset,0 5px 50px var(--main-color) inset,0 5px 2px var(--main-color) inset,0 5px 50px var(--main-color) ;
+}
